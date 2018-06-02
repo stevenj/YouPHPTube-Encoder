@@ -1,3 +1,24 @@
+# NO NONSENSE INSTALL GUIDE
+1. You should have already built the docker container for youphptube from https://github.com/stevenj/YouPHPTube
+2. Clone this repository
+```sh
+git clone https://github.com/stevenj/YouPHPTube-Encoder.git
+```
+
+3. Build the docker container:
+
+```sh
+sudo docker build -t youphptube-encoder YouPHPTube-Encoder
+```
+4. Wait till it finished. Should say:
+```
+Successfully tagged youphptube-encoder:latest
+```
+
+1. Go to the Docker Compose youphptube configuration source, and follow from there:
+https://github.com/stevenj/YouPHPTube-DockerCompose
+
+
 ### If you are not sure what is YouPHPTube, go to our <a href="https://demo.youphptube.com/" target="_blank">demo</a> page or visit our <a href="https://www.youphptube.com/" target="_blank">official site</a>
 
 # First thing...
