@@ -78,6 +78,10 @@ class Streamer extends ObjectYPT {
         }
         $config = new Configuration();
         $urls = $config->getAllowedStreamersURL();
+
+        /* Temp fudge security check when misconfigured */
+        /*return true;*/
+
         if (empty($urls)) {
             return true;
         }
